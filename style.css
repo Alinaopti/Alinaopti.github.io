@@ -1,4 +1,4 @@
-/* ===== GENERAL RESET ===== */
+/* ===== GLOBAL RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   color: #333;
 }
 
-/* ===== HEADER ===== */
+/* ===== HEADER & NAVIGATION ===== */
 header {
   background-color: #ffffff;
   padding: 20px 40px;
@@ -63,13 +63,18 @@ header {
   background-color: #e59400;
 }
 
-/* ===== HERO ===== */
-.hero {
+/* ===== HERO SECTIONS ===== */
+.hero, .services-hero {
   text-align: center;
   padding: 120px 20px 80px;
 }
 
-.hero h1 {
+.services-hero {
+  background: #f0f7ff;
+  padding: 80px 20px 50px;
+}
+
+.hero h1, .services-hero h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.8rem;
@@ -77,10 +82,13 @@ header {
   color: #0d3b66;
 }
 
-.hero p {
+.hero p, .services-hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
   color: #555;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-hero {
@@ -97,28 +105,27 @@ header {
   background-color: #49b4e5;
 }
 
-/* ===== SERVICES HERO ===== */
-.services-hero {
+/* ===== ABOUT PAGE ===== */
+.about-page, .about-preview {
   text-align: center;
-  padding: 80px 20px 50px;
-  background: #f0f7ff;
+  padding: 60px 20px;
 }
 
-.services-hero h1 {
+.about-page h1, .about-preview h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
   color: #0d3b66;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.services-hero p {
-  font-size: 1.1rem;
-  color: #555;
-  max-width: 700px;
+.about-page ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  max-width: 600px;
   margin: 0 auto;
+  text-align: left;
 }
 
-/* ===== SERVICES CARDS ===== */
+/* ===== SERVICES PAGE ===== */
 .services-page {
   padding: 50px 20px;
 }
@@ -162,7 +169,6 @@ header {
   line-height: 1.5;
 }
 
-/* ===== SERVICES CTA ===== */
 .services-cta {
   text-align: center;
   padding: 60px 20px;
@@ -174,43 +180,7 @@ header {
   color: #0d3b66;
 }
 
-.services-cta .cta-hero {
-  background-color: #5ac8fa;
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.services-cta .cta-hero:hover {
-  background-color: #49b4e5;
-}
-
-}
-
-/* ===== ABOUT ===== */
-.about-preview, .about-page {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.about-page h1, .about-preview h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: #0d3b66;
-  margin-bottom: 20px;
-}
-
-.about-page ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-/* ===== CLIENTS ===== */
+/* ===== CLIENTS PAGE ===== */
 .clients-preview, .clients-page {
   text-align: center;
   padding: 60px 20px;
@@ -234,7 +204,7 @@ header {
   color: #0d3b66;
 }
 
-/* ===== CONTACT ===== */
+/* ===== CONTACT PAGE ===== */
 .contact-page {
   text-align: center;
   padding: 60px 20px;
