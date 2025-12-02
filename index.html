@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OptimWize - Revenue Operations Consulting</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>OptimWize — Smarter Revenue Operations</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- header -->
   <header>
-    <nav>
+    <nav class="container">
       <div class="logo">OptimWize</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a class="cta" href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
+  <!-- Hero -->
   <main>
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <h1>OptimWize: Smarter Revenue Operations</h1>
-      <p>Helping companies streamline their sales, marketing, and customer success teams for predictable growth.</p>
-      <a href="contact.html" class="cta-hero">Get in Touch</a>
+    <section class="hero reveal">
+      <div class="container">
+        <h1>OptimWize: flowing revenue operations for predictable growth</h1>
+        <p>We align sales, marketing and customer success with a modern RevOps approach — strategy, process and tech tuned for scale.</p>
+        <a class="cta-hero" href="contact.html">Start Your Review</a>
+      </div>
     </section>
 
-    <!-- SERVICES PREVIEW -->
-    <section class="home-services-preview">
-      <div class="services-cards">
+    <!-- Services preview -->
+    <section class="home-services-preview container reveal">
+      <div class="section-title">What we do</div>
+      <div class="section-sub">Tailored RevOps services that connect strategy, process and technology into a single flow.</div>
+
+      <div class="services-cards" aria-hidden="false">
         <div class="service-card">
-          <div class="icon">📊</div>
+          <img src="images/growth-arrow.svg" class="card-icon" alt="Strategy">
           <h2>RevOps Strategy</h2>
-          <p>Align your teams with a clear roadmap for predictable growth.</p>
+          <p>Roadmaps and go-to-market alignment to create predictable revenue models.</p>
         </div>
 
         <div class="service-card">
-          <div class="icon">⚙️</div>
+          <img src="images/gear.svg" class="card-icon" alt="Process">
           <h2>Process Optimization</h2>
-          <p>Simplify workflows and improve efficiency across departments.</p>
+          <p>Streamline hand-offs and workflows so teams spend time selling, not chasing.</p>
         </div>
 
         <div class="service-card">
-          <div class="icon">📈</div>
+          <img src="images/bar-chart.svg" class="card-icon" alt="Data">
           <h2>Data & Analytics</h2>
-          <p>Turn business data into actionable insights for better decisions.</p>
+          <p>Dashboards, KPIs and analytics enable confident decisions and continuous improvement.</p>
         </div>
       </div>
     </section>
 
-    <!-- CLIENTS / LOGOS -->
-    <section class="clients-preview">
-      <h2>Our Clients</h2>
+    <!-- Clients -->
+    <section class="clients-preview container reveal">
+      <div class="section-title">Trusted by</div>
+      <div class="section-sub">We partner with growing companies and scale-ups to build repeatable revenue.</div>
+
       <div class="client-logos">
-        <div class="logo-item">Client 1</div>
-        <div class="logo-item">Client 2</div>
-        <div class="logo-item">Client 3</div>
-        <div class="logo-item">Client 4</div>
+        <div class="logo-item">Client A</div>
+        <div class="logo-item">Client B</div>
+        <div class="logo-item">Client C</div>
+        <div class="logo-item">Client D</div>
       </div>
     </section>
 
-    <!-- FINAL CTA -->
-    <section class="services-cta">
-      <p>Ready to optimize your revenue operations?</p>
-      <a href="contact.html" class="cta-hero">Contact Us</a>
+    <!-- CTA -->
+    <section class="services-cta reveal">
+      <p>Ready to optimize your revenue operations and scale predictably?</p>
+      <a class="cta-hero" href="contact.html">Book a Consultation</a>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 OptimWize. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 OptimWize — built for predictable growth.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
