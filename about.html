@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About OptimWize</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — OptimWize</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- HEADER -->
   <header>
-    <nav>
+    <nav class="container">
       <div class="logo">OptimWize</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a class="cta" href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <!-- HERO / INTRO -->
-    <section class="services-hero">
-      <h1>About OptimWize</h1>
-      <p>We partner with businesses to optimize revenue operations, streamline processes, and drive predictable growth.</p>
+    <section class="services-hero reveal">
+      <div class="container">
+        <h1>About OptimWize</h1>
+        <p>We partner with companies to create repeatable revenue systems — combining strategy, process and technology with an operational lens.</p>
+      </div>
     </section>
 
-    <!-- ABOUT CARDS -->
-    <section class="about-page">
+    <section class="about-page container reveal">
+      <div class="section-title">How we work</div>
+      <div class="section-sub">A collaborative, data-first approach that brings clarity and momentum to your revenue operations.</div>
+
       <div class="services-cards">
         <div class="service-card">
-          <div class="icon">🤝</div>
+          <img src="images/handshake.svg" class="card-icon" alt="Mission">
           <h2>Our Mission</h2>
-          <p>Help companies align their revenue teams for maximum efficiency and growth.</p>
+          <p>Help teams align around measurable goals and sustainable growth rhythms.</p>
         </div>
 
         <div class="service-card">
-          <div class="icon">💡</div>
+          <img src="images/lightbulb.svg" class="card-icon" alt="Approach">
           <h2>Our Approach</h2>
-          <p>Data-driven strategies, process optimization, and technology integration.</p>
+          <p>Prioritize high-impact changes, automate manual steps, and measure what matters.</p>
         </div>
 
         <div class="service-card">
-          <div class="icon">🌟</div>
+          <img src="images/star.svg" class="card-icon" alt="Values">
           <h2>Our Values</h2>
-          <p>Transparency, collaboration, and delivering measurable impact for clients.</p>
+          <p>Transparency, partnership, and measurable outcomes — no vanity metrics.</p>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="services-cta">
-      <p>Want to learn more about how we can help your business?</p>
-      <a href="contact.html" class="cta-hero">Contact Us</a>
+    <section class="services-cta reveal">
+      <p>Curious how OptimWize can help your business? Let’s talk.</p>
+      <a class="cta-hero" href="contact.html">Get in touch</a>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 OptimWize. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 OptimWize. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
