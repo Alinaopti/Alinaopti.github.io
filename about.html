@@ -1,71 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>About — OptimWize</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OptimWize - About</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <div class="logo">OptimWize</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="clients.html">Clients</a>
-        <a class="cta" href="contact.html">Contact</a>
-      </div>
-    </nav>
-  </header>
+<header>
+  <nav class="container">
+    <a href="index.html" class="logo">OptimWize</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="contact.html" class="cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <section class="services-hero reveal">
-      <div class="container">
-        <h1>About OptimWize</h1>
-        <p>We partner with companies to create repeatable revenue systems — combining strategy, process and technology with an operational lens.</p>
-      </div>
-    </section>
-
-    <section class="about-page container reveal">
-      <div class="section-title">How we work</div>
-      <div class="section-sub">A collaborative, data-first approach that brings clarity and momentum to your revenue operations.</div>
-
-      <div class="services-cards">
-        <div class="service-card">
-          <img src="images/handshake.svg" class="card-icon" alt="Mission">
-          <h2>Our Mission</h2>
-          <p>Help teams align around measurable goals and sustainable growth rhythms.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="images/lightbulb.svg" class="card-icon" alt="Approach">
-          <h2>Our Approach</h2>
-          <p>Prioritize high-impact changes, automate manual steps, and measure what matters.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="images/star.svg" class="card-icon" alt="Values">
-          <h2>Our Values</h2>
-          <p>Transparency, partnership, and measurable outcomes — no vanity metrics.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="services-cta reveal">
-      <p>Curious how OptimWize can help your business? Let’s talk.</p>
-      <a class="cta-hero" href="contact.html">Get in touch</a>
-    </section>
-  </main>
-
-  <footer>
+<main>
+  <section class="hero">
     <div class="container">
-      <p>&copy; 2025 OptimWize. All rights reserved.</p>
+      <h1>About OptimWize</h1>
+      <p>We are a Revenue Operations consultancy helping businesses scale with strategy, automation, and analytics.</p>
+      <a href="contact.html" class="cta-hero">Get in Touch</a>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="about-page reveal">
+    <div class="container">
+      <h2 class="section-title">Our Expertise</h2>
+      <p class="section-sub">We combine strategy, technology, and data to optimize your revenue operations.</p>
+      <div class="about-cards">
+        <div class="service-card">
+          <img src="icons/team.svg" class="card-icon" alt="Team">
+          <h3>Our Team</h3>
+          <p>Experienced consultants dedicated to your growth.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/process.svg" class="card-icon" alt="Process">
+          <h3>Our Process</h3>
+          <p>Data-driven, efficient, and fully aligned with your goals.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/values.svg" class="card-icon" alt="Values">
+          <h3>Our Values</h3>
+          <p>Transparency, collaboration, and measurable results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 OptimWize. All rights reserved.
+</footer>
 </body>
 </html>
