@@ -1,4 +1,4 @@
-/* ===== OptimWize - Full Site Styles (Gradient Glow, Airy, Responsive) ===== */
+/* ===== OptimWize - Full Site Styles (Updated for consistent header & spacing) ===== */
 
 /* ------------- Variables ------------- */
 :root{
@@ -18,6 +18,8 @@
   --shadow: rgba(17, 24, 39, 0.06);
   --radius: 12px;
   --max-width: 1200px;
+
+  --header-height: 120px; /* consistent header + top spacing */
 }
 
 /* ------------- Reset ------------- */
@@ -42,28 +44,65 @@ body{
 
 /* ------------- Header ------------- */
 header{
-  position:fixed;
-  top:0;left:0;right:0;
+  position: fixed;
+  top:0; left:0; right:0;
   z-index:1200;
   backdrop-filter: blur(6px);
-  background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.56));
+  background: rgba(255,255,255,0.85);
   box-shadow: 0 6px 18px rgba(12,18,34,0.04);
   transition: padding 280ms ease, box-shadow 280ms ease;
   padding:18px 0;
 }
-header.scrolled{ padding:8px 0; box-shadow: 0 10px 28px rgba(12,18,34,0.06); }
+header.scrolled{
+  padding:8px 0;
+  box-shadow: 0 10px 28px rgba(12,18,34,0.06);
+}
 
 nav.container{
-  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
 }
-.logo{ font-family: 'Montserrat', system-ui, sans-serif; font-weight:700; color:var(--g2); font-size:1.35rem; letter-spacing:0.2px; }
-.nav-links{ list-style:none; display:flex; gap:22px; align-items:center; }
-.nav-links a{ text-decoration:none;color:var(--g2); font-weight:500; transition: color .18s ease; }
+.logo{
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-weight:700;
+  color:var(--g2);
+  font-size:1.35rem;
+  letter-spacing:0.2px;
+}
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
+.nav-links a{
+  text-decoration:none;
+  color:var(--g2);
+  font-weight:500;
+  transition: color .18s ease;
+}
 .nav-links a:hover{ color: var(--g3); }
-.cta{ background: linear-gradient(90deg,var(--cta), #ff9a3d); color:#fff; padding:8px 16px; border-radius:10px; font-weight:700; text-decoration:none; box-shadow: 0 6px 16px rgba(255,154,61,0.12); transition: transform .18s ease; }
+
+.cta{
+  background: linear-gradient(90deg,var(--cta), #ff9a3d);
+  color:#fff;
+  padding:8px 16px;
+  border-radius:10px;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow: 0 6px 16px rgba(255,154,61,0.12);
+  transition: transform .18s ease;
+}
 .cta:hover{ transform: translateY(-3px); }
 
-/* ------------- Hero (with subtle gradient glow blobs) ------------- */
+/* ------------- Main spacing to prevent header overlap ------------- */
+main{
+  padding-top: var(--header-height);
+}
+
+/* ------------- Hero ------------- */
 .hero{
   position:relative;
   padding:120px 0 60px;
@@ -84,7 +123,6 @@ nav.container{
 }
 .hero p{ color:var(--muted); max-width:760px; margin:0 auto 26px; font-size:1.05rem; }
 
-/* subtle gradient blobs behind hero - soft, animated */
 .hero::before,
 .hero::after{
   content:""; position:absolute; z-index:1; pointer-events:none;
@@ -103,12 +141,11 @@ nav.container{
 @keyframes floatA{ to { transform: translateY(18px) translateX(12px) } }
 @keyframes floatB{ to { transform: translateY(-18px) translateX(-10px) } }
 
-/* hero button */
 .cta-hero{ display:inline-block; text-decoration:none; padding:12px 28px; border-radius:10px; font-weight:700; color:#fff; background: linear-gradient(90deg,var(--g2), var(--g3)); box-shadow: 0 10px 30px rgba(78, 137, 255, 0.12); transition: transform .18s; }
 .cta-hero:hover{ transform: translateY(-4px); }
 
-/* ------------- Reusable section titles ------------- */
-.section-title{ text-align:center; margin:10px 0 20px; color: #0f1b34; font-family:'Montserrat', sans-serif; font-weight:700; font-size:1.5rem; }
+/* ------------- Section Titles ------------- */
+.section-title{ text-align:center; margin:10px 0 20px; color: #0f1b34; font-family:'Montserrat',sans-serif; font-weight:700; font-size:1.5rem; }
 .section-sub{ text-align:center; color:var(--muted); margin-bottom:26px; max-width:780px; margin-left:auto;margin-right:auto; }
 
 /* ------------- Card Grid (Services & Reuse) ------------- */
@@ -133,9 +170,6 @@ nav.container{
 .service-card h2{ font-family:'Montserrat',sans-serif; color:#0f1b34; font-size:1.1rem; margin-top:6px; }
 .service-card p{ color:var(--muted); font-size:0.98rem; flex:1 }
 
-/* small helper for tight previews on home */
-.home-services-preview{ padding:30px 0 10px; }
-
 /* ------------- Clients ------------- */
 .client-logos{ display:flex; gap:18px; flex-wrap:wrap; justify-content:center; margin-top:18px; }
 .logo-item{ background:var(--card-bg); padding:18px 22px; border-radius:10px; box-shadow: 0 8px 22px var(--shadow); color:var(--g2); font-weight:700; }
@@ -143,14 +177,7 @@ nav.container{
 /* ------------- About page reuse (cards) ------------- */
 .about-page{ padding:40px 0 20px; }
 
-/* ------------- Services Page specifics ------------- */
-.services-hero{ padding:70px 0 36px; background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95)); }
-
-/* CTA block (reused) */
-.services-cta{ padding:40px 0 80px; text-align:center; }
-.services-cta p{ color:#0f1b34; font-weight:600; margin-bottom:14px; }
-
-/* ------------- Contact form ------------- */
+/* ------------- Contact page ------------- */
 .contact-page{ padding:60px 0; }
 form{ display:flex; flex-direction:column; gap:12px; max-width:520px; margin:12px auto 0; }
 form input, form textarea{
@@ -166,18 +193,15 @@ footer{ border-top:1px solid #edf2f7; padding:26px 0; text-align:center; color:v
 /* ------------- Reveal animations & utility classes ------------- */
 .reveal{ opacity:0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; will-change: transform, opacity; }
 .reveal.visible{ opacity:1; transform: translateY(0); }
-
 .fade-slow{ animation: fadeSlow .9s ease forwards; opacity:0; }
 @keyframes fadeSlow{ to { opacity:1 } }
-
-/* small stagger helper for JS (.stagger[data-delay]) - applied inline by JS */
 [data-delay]{ opacity:0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
 
 /* ------------- Responsive ------------- */
 @media (max-width: 880px){
   .hero{ padding: 90px 0 40px; }
   .hero h1{ font-size:2rem; }
-  .nav-links{ display:none; } /* we can add mobile menu later */
+  .nav-links{ display:none; }
   .container{ padding:0 18px; }
 }
 @media (max-width:480px){
