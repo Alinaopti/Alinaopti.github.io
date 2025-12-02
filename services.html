@@ -1,73 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - OptimWize</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OptimWize - Services</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <nav>
-      <div class="logo">OptimWize</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav class="container">
+    <a href="index.html" class="logo">OptimWize</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="contact.html" class="cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <!-- HERO SECTION -->
-    <section class="services-hero">
+<main>
+  <section class="hero">
+    <div class="container">
       <h1>Our Services</h1>
-      <p>We help companies streamline revenue operations and drive predictable growth with expert strategies and smart technology solutions.</p>
-    </section>
+      <p>We help you scale revenue operations efficiently and effectively.</p>
+      <a href="contact.html" class="cta-hero">Get in Touch</a>
+    </div>
+  </section>
 
-    <!-- SERVICES CARDS -->
-    <section class="services-page">
+  <section class="services-page reveal">
+    <div class="container">
+      <h2 class="section-title">What We Offer</h2>
+      <p class="section-sub">Comprehensive solutions tailored to your business needs.</p>
       <div class="services-cards">
         <div class="service-card">
-          <div class="icon">📊</div>
-          <h2>RevOps Strategy</h2>
-          <p>Align your sales, marketing, and customer success teams with a clear, actionable roadmap for growth.</p>
+          <img src="icons/analytics.svg" class="card-icon" alt="Analytics">
+          <h3>Data Analytics</h3>
+          <p>Analyze and optimize your sales and marketing performance.</p>
         </div>
-
         <div class="service-card">
-          <div class="icon">⚙️</div>
-          <h2>Process Optimization</h2>
-          <p>Simplify workflows, improve efficiency, and ensure smooth cross-team collaboration.</p>
+          <img src="icons/automation.svg" class="card-icon" alt="Automation">
+          <h3>Revenue Automation</h3>
+          <p>Streamline your revenue workflows to save time and increase accuracy.</p>
         </div>
-
         <div class="service-card">
-          <div class="icon">📈</div>
-          <h2>Data & Analytics</h2>
-          <p>Leverage your business data to make informed decisions and monitor KPIs effectively.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="icon">💻</div>
-          <h2>CRM & Tech Stack</h2>
-          <p>Optimize your technology stack and integrate tools for seamless revenue operations.</p>
+          <img src="icons/strategy.svg" class="card-icon" alt="Strategy">
+          <h3>RevOps Strategy</h3>
+          <p>Align your teams for sustainable growth and predictable results.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CALL TO ACTION -->
-    <section class="services-cta">
-      <p>Ready to take your revenue operations to the next level?</p>
-      <a href="contact.html" class="cta-hero">Contact Us</a>
-    </section>
-  </main>
+</main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 OptimWize. All rights reserved.</p>
-  </footer>
+<footer>
+  &copy; 2025 OptimWize. All rights reserved.
+</footer>
 </body>
 </html>
