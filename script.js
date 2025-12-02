@@ -1,2 +1,2 @@
 // Placeholder for future interactivity
-console.log("OptimWize website loaded.");
+console.log("OptimWize site loaded.");
