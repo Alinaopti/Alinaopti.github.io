@@ -1,0 +1,210 @@
+/* ===== GENERAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+header {
+  background-color: #0d3b66; /* Dark blue */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #f0a500; /* Gold highlight */
+}
+
+.cta {
+  background-color: #f0a500;
+  color: #0d3b66;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  background-color: #e59400;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #e0f7fa; /* Light blue */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-hero {
+  background-color: #0d3b66;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-hero:hover {
+  background-color: #09406b;
+}
+
+/* ===== SERVICES SECTION ===== */
+.services-preview {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #0d3b66;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-preview, .about-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-page h1, .about-preview h2 {
+  color: #0d3b66;
+  margin-bottom: 20px;
+}
+
+/* ===== CLIENTS SECTION ===== */
+.clients-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.logo-item {
+  background-color: #fff;
+  padding: 20px;
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #0d3b66;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 10px;
+  background-color: #0d3b66;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #09406b;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d3b66;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .services-cards, .client-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none; /* Mobile menu can be added later */
+  }
+}
