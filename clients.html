@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clients - OptimWize</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OptimWize - Clients</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">OptimWize</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav class="container">
+    <a href="index.html" class="logo">OptimWize</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="contact.html" class="cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <section class="clients-page">
+<main>
+  <section class="hero">
+    <div class="container">
       <h1>Our Clients</h1>
-      <p>We’ve helped businesses of all sizes achieve predictable revenue growth.</p>
-      <div class="client-logos">
-        <div class="logo-item">Client A</div>
-        <div class="logo-item">Client B</div>
-        <div class="logo-item">Client C</div>
-        <div class="logo-item">Client D</div>
-      </div>
-    </section>
-  </main>
+      <p>We’ve worked with amazing companies across industries.</p>
+      <a href="contact.html" class="cta-hero">Get in Touch</a>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 OptimWize. All rights reserved.</p>
-  </footer>
+  <section class="clients-page reveal">
+    <div class="container">
+      <h2 class="section-title">Clients We’ve Helped</h2>
+      <p class="section-sub">Trusted by companies that value growth and efficiency.</p>
+      <div class="client-logos">
+        <div class="logo-item"><img src="images/client1.svg" alt="Client 1"></div>
+        <div class="logo-item"><img src="images/client2.svg" alt="Client 2"></div>
+        <div class="logo-item"><img src="images/client3.svg" alt="Client 3"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 OptimWize. All rights reserved.
+</footer>
 </body>
 </html>
