@@ -1,0 +1,11 @@
+<svg class="card-icon" width="80" height="80" viewBox="0 0 24 24" fill="url(#gradient1)" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="10" width="4" height="11" rx="1" />
+  <rect x="10" y="5" width="4" height="16" rx="1" />
+  <rect x="17" y="2" width="4" height="19" rx="1" />
+</svg>
