@@ -1,118 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OptimWize - Home</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptimWize – Revenue Operations Consultancy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
+
 <body>
-<header>
-  <nav class="container">
-    <a href="index.html" class="logo">OptimWize</a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="clients.html">Clients</a></li>
-      <li><a href="contact.html" class="cta">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Optimize Your Revenue Operations</h1>
-      <p>We help businesses scale with strategy, automation, and data-driven insights.</p>
-      <a href="contact.html" class="cta-hero">Get in Touch</a>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">OptimWize</a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html" class="button-nav">Contact</a>
+      </nav>
     </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section reveal">
+    <div class="hero-content">
+      <h1>RevOps That Accelerates Growth</h1>
+      <p>OptimWize brings clarity, alignment, and operational excellence to your revenue engine — so your teams can scale smarter and faster.</p>
+      <a href="services.html" class="primary-btn">Explore Services</a>
+    </div>
+
+    <!-- decorative elements -->
+    <div class="hero-bubble bubble1"></div>
+    <div class="hero-bubble bubble2"></div>
+    <div class="hero-bubble bubble3"></div>
   </section>
 
-  <!-- Services Preview -->
+  <!-- FEATURES PREVIEW -->
   <section class="home-services-preview reveal">
-    <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-sub">A quick look at how we help businesses scale revenue operations.</p>
-      <div class="services-cards">
-        <div class="service-card">
-          <img src="histogram-svgrepo-com.svg" class="card-icon" alt="Data & Analytics">
-          <h3>Data & Analytics</h3>
-          <p>Analyze your sales & marketing performance efficiently.</p>
-        </div>
-        <div class="service-card">
-          <img src="pie-chart-svgrepo-com.svg" class="card-icon" alt="Revenue Automation">
-          <h3>Revenue Automation</h3>
-          <p>Streamline workflows to save time and increase accuracy.</p>
-        </div>
-        <div class="service-card">
-          <img src="target-svgrepo-com.svg" class="card-icon" alt="RevOps Strategy">
-          <h3>RevOps Strategy</h3>
-          <p>Align teams for sustainable growth and predictable results.</p>
-        </div>
+    <h2>What We Bring to Your Revenue Engine</h2>
+    <div class="services-row">
+      <div class="feature-card">
+        <img src="icons/handshake.svg" alt="">
+        <h3>RevOps Alignment</h3>
+        <p>Connecting Marketing, Sales & CS to work as one unified growth engine.</p>
       </div>
-      <div style="text-align:center; margin-top:20px;">
-        <a href="services.html" class="cta-hero">Explore All Services</a>
+
+      <div class="feature-card">
+        <img src="icons/values.svg" alt="">
+        <h3>Real Operational Clarity</h3>
+        <p>Process and system improvement that removes friction & boosts performance.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="icons/process.svg" alt="">
+        <h3>Scalable Systems</h3>
+        <p>Enablement, workflows & automation built to support long-term growth.</p>
       </div>
     </div>
   </section>
 
-  <!-- Clients Preview -->
-  <section class="clients-preview reveal">
-    <div class="container">
-      <h2 class="section-title">Clients We’ve Helped</h2>
-      <p class="section-sub">Trusted by companies that value growth and efficiency.</p>
-      <div class="client-logos">
-        <div class="logo-item"><img src="honor-svgrepo-com.svg" alt="Client 1"></div>
-        <div class="logo-item"><img src="honor-svgrepo-com.svg" alt="Client 2"></div>
-        <div class="logo-item"><img src="honor-svgrepo-com.svg" alt="Client 3"></div>
-      </div>
-      <div style="text-align:center; margin-top:20px;">
-        <a href="clients.html" class="cta-hero">See All Clients</a>
-      </div>
-    </div>
+  <!-- CTA BLOCK -->
+  <section class="cta-section reveal">
+    <h2>Ready to Optimize Your Revenue Operations?</h2>
+    <p>Let’s build the operational foundation your team deserves.</p>
+    <a href="contact.html" class="primary-btn">Get in Touch</a>
   </section>
 
-  <!-- About Preview -->
-  <section class="about-preview reveal">
-    <div class="container">
-      <h2 class="section-title">Why OptimWize</h2>
-      <p class="section-sub">Learn more about our team, process, and values.</p>
-      <div class="about-cards">
-        <div class="service-card">
-          <img src="user-svgrepo-com.svg" class="card-icon" alt="Team">
-          <h3>Our Team</h3>
-          <p>Experienced consultants dedicated to your growth.</p>
-        </div>
-        <div class="service-card">
-          <img src="document-svgrepo-com.svg" class="card-icon" alt="Process">
-          <h3>Our Process</h3>
-          <p>Data-driven, efficient, and fully aligned with your goals.</p>
-        </div>
-        <div class="service-card">
-          <img src="inspiration-svgrepo-com.svg" class="card-icon" alt="Values">
-          <h3>Our Values</h3>
-          <p>Transparency, collaboration, and measurable results.</p>
-        </div>
-      </div>
-      <div style="text-align:center; margin-top:20px;">
-        <a href="about.html" class="cta-hero">Learn More About Us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA -->
-  <section class="home-cta reveal">
-    <div class="container" style="text-align:center; padding:60px 0;">
-      <h2>Ready to Scale Your Revenue Operations?</h2>
-      <a href="contact.html" class="cta-hero">Get in Touch</a>
-    </div>
-  </section>
-</main>
-
-<footer>
-  &copy; 2025 OptimWize. All rights reserved.
-</footer>
 </body>
 </html>
