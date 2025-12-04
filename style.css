@@ -168,3 +168,26 @@ footer{ border-top:1px solid #edf2f7; padding:26px 0; text-align:center; color:v
 @media (max-width:880px) {
   .nav-links { display: none; } /* optional: add mobile menu toggle */
 }
+/* Default CTA button */
+.cta-btn {
+  padding: 8px 18px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--g2), var(--g3));
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(78,137,255,0.12);
+  transition: transform 0.18s, filter 0.18s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+/* Optional subtle highlight on current page */
+.cta-btn.active {
+  /* You can make it slightly lighter or add a subtle border/glow */
+  box-shadow: 0 8px 20px rgba(78,137,255,0.2);
+}
+
