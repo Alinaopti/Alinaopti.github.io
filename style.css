@@ -36,21 +36,20 @@ body{
 .container{max-width:var(--max-width);margin:0 auto;padding:0 24px;}
 
 /* ------------- Header ------------- */
+/* ===== Site Header ===== */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: var(--header-height);
-  z-index: 1200;
+  height: 80px;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(6px);
-  padding: 0 24px;
+  box-shadow: 0 6px 18px rgba(12,18,34,0.04);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 6px 18px rgba(12,18,34,0.04);
-  transition: padding 0.28s ease, box-shadow 0.28s ease;
+  z-index: 1200;
+  padding: 0 24px;
 }
 
 .site-header.scrolled {
@@ -59,67 +58,59 @@ body{
 
 .nav-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .logo img {
-  display: block;
-  height: 40px;
+  height: 36px; /* adjust as needed */
   width: auto;
+  display: block;
 }
 
-nav {
+.nav-links {
   display: flex;
-  align-items: center;
   gap: 24px;
+  list-style: none;
+  align-items: center;
 }
 
-nav a {
+.nav-links li a {
   text-decoration: none;
   color: var(--g2);
   font-weight: 500;
   transition: color 0.2s;
 }
 
-nav a:hover {
+.nav-links li a:hover,
+.nav-links li a.active {
   color: var(--g3);
-}
-
-nav a.active {
   font-weight: 700;
-  color: var(--g3);
 }
 
-.cta-btn {
+.nav-links li a.cta {
   padding: 8px 18px;
   border-radius: 10px;
   background: linear-gradient(90deg, var(--g2), var(--g3));
   color: #fff;
   font-weight: 700;
-  text-decoration: none;
   box-shadow: 0 6px 16px rgba(78,137,255,0.12);
   transition: transform 0.18s, filter 0.18s;
 }
 
-.cta-btn:hover {
+.nav-links li a.cta:hover {
   transform: translateY(-3px);
   filter: brightness(1.05);
 }
 
-.cta-btn.active {
-  box-shadow: 0 8px 20px rgba(78,137,255,0.2);
-}
-
 /* Mobile responsive */
 @media (max-width:880px) {
-  nav {
-    display: none; /* optional: implement mobile menu toggle */
-  }
+  .nav-links { display: none; } /* optional: implement mobile menu toggle */
 }
+
 
 /* ------------- Main spacing ------------- */
 main{ padding-top: var(--header-height); }
