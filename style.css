@@ -104,3 +104,67 @@ footer{ border-top:1px solid #edf2f7; padding:26px 0; text-align:center; color:v
 /* ------------- Responsive ------------- */
 @media (max-width:880px){ .hero{ padding:90px 0 40px; } .hero h1{ font-size:2rem; } .nav-links{ display:none; } .container{ padding:0 18px; } }
 @media (max-width:480px){ .hero h1{ font-size:1.6rem; } .service-card{ padding:20px; } .card-icon{ width:64px; height:64px; } }
+/* Header */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  padding: 18px 0;
+  box-shadow: 0 6px 18px rgba(12,18,34,0.04);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--g2); /* default visible color */
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--g3); /* highlight on hover */
+}
+
+.nav-links a.active {
+  font-weight: 700; /* bold for active page */
+  color: var(--g3); /* highlighted color */
+}
+
+.cta-btn {
+  padding: 8px 18px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--g2), var(--g3));
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(78,137,255,0.12);
+  transition: transform 0.18s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Mobile responsive */
+@media (max-width:880px) {
+  .nav-links { display: none; } /* optional: add mobile menu toggle */
+}
