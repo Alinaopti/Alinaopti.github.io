@@ -173,3 +173,49 @@ footer{ border-top:1px solid #edf2f7; padding:26px 0; text-align:center; color:v
 
 </body>
 </html>
+.home-services-preview {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.home-services-preview h2 {
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+}
+
+.services-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.05);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.feature-card img {
+  width: 54px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  opacity: .8;
+  font-size: 1.05rem;
+}
