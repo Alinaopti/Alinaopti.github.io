@@ -195,4 +195,9 @@ footer{ border-top:1px solid #edf2f7; padding:26px 0; text-align:center; color:v
   height: 48px;   /* adjust size */
   width: auto;
 }
+.site-header .logo img {
+  display: block;
+  height: 36px;  /* smaller, better proportion */
+  width: auto;
+}
 
