@@ -190,4 +190,9 @@ footer{ border-top:1px solid #edf2f7; padding:26px 0; text-align:center; color:v
   /* You can make it slightly lighter or add a subtle border/glow */
   box-shadow: 0 8px 20px rgba(78,137,255,0.2);
 }
+.logo img {
+  display: block;
+  height: 48px;   /* adjust size */
+  width: auto;
+}
 
